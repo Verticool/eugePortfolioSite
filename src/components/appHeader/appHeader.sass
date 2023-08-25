@@ -1,0 +1,66 @@
+header
+    .app__header
+        &_img-group
+            position: relative
+            height: 700px
+        &_globe
+            position: absolute
+            z-index: 10
+            background: transparent
+            right: 50%
+            transform: translateX(46%)
+            top: 300px
+            width: 750px
+            margin: 0 auto
+        &_star
+            position: absolute
+            z-index: 2
+            right: 50%
+            transform: translateX(50%)
+            width: 1000px
+            margin: 0 auto
+        &_text
+            font-family: 'Climate Crisis', cursive
+            z-index: 5
+            background: transparent
+            position: absolute
+            top: 220px
+            right: 50%
+            transform: translateX(48%)
+            margin: 0 auto
+            font-size: 200px
+            color: #E4E6C3
+        &__bio
+            position: absolute
+            display: grid
+            height: 400px
+            width: 1140px
+            grid-template: 400px / 400px 400px
+            background-color: #000
+            z-index: 15
+            left: 50%
+            transform: translateX(-50%)
+            align-items: center
+            justify-content: center
+            &__image
+                padding: 30px
+                img
+                    width: 75px
+                    border-radius: 100%
+                    filter: grayscale(1)
+            &__text
+                display: flex
+                flex-direction: column
+                width: 100%
+                font-family: 'DM Sans', sans-serif
+                font-size: 18px
+                color: #E4E6C3
+                &_big
+                    display: block
+                    width: 100%
+                    font-size: 80px
+                    font-family: 'Climate Crisis', cursive
+                    color: #fff
+
+svg path
+    fill: #121113

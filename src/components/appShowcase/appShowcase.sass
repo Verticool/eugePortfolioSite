@@ -1,0 +1,31 @@
+.appShowcase
+    margin: 0 auto
+    margin-top: 500px
+    width: 100%
+    &-grid
+        display: grid
+        grid-template: repeat(3, 250px) / repeat(2, 400px)
+        gap: 15px
+        justify-content: center
+    &-item
+        cursor: pointer
+        img
+            filter: grayscale(1)
+            border-radius: 20px
+            object-fit: cover
+            height: 100%
+            width: 100%
+            transition: 1s ease all
+            &:hover
+                filter: grayscale(0.3)
+                transition: 1s ease all
+                transform: scale(1.02)
+
+    &-item-2
+        grid-area: 1 / 1 / 1 / 1
+    &-item-1
+        grid-area: 2 / 1 / 4 / 1
+    &-item-3
+        grid-area: 3 / 2 / 4 / 2
+    &-item-4
+        grid-area: 1 / 2 / 3 / 2
